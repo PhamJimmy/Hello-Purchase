@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link href="{% static 'core/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'core/css/mdb.min.css' %}" rel="stylesheet">
+    <link href="{% static 'core/css/style.min.css' %}" rel="stylesheet">
+  </head>
+  <body>
+
+    {% block content %}
+    {% endblock content %}
+
+    {% include 'core/scripts.html' %}
+
+  </body>
+</html>
